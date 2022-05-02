@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Prb.ClassesAndObjects.Core\Prb.ClassesAndObjects.Core.csproj" />
+    <ProjectReference Include="..\Pra.ClassesAndObjects.Core\Pra.ClassesAndObjects.Core.csproj" />
   </ItemGroup>
 
 </Project>

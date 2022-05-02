@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prb.ClassesAndObjects.Core
+namespace Pra.ClassesAndObjects.Core
 {
-    public class Car 
+    public class Car
     {
         private int topSpeed;
 
@@ -14,6 +14,7 @@ namespace Prb.ClassesAndObjects.Core
         public string Color { get; set; }
         public decimal Price { get; set; }
         public CarType CarType { get; set; }
+
         public int TopSpeed
         {
             get { return topSpeed; }
@@ -26,9 +27,6 @@ namespace Prb.ClassesAndObjects.Core
             }
         }
 
-        public Car()  
-        {
-        }
         public override string ToString()
         {
             return $"{Brand} - {CarType}";

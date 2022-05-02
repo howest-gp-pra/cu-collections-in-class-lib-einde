@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prb.ClassesAndObjects.Core
+namespace Pra.ClassesAndObjects.Core
 {
     public class CarType
     {

@@ -12,16 +12,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Prb.ClassesAndObjects.Core;
+using Pra.ClassesAndObjects.Core;
 
-namespace Prb.ClassesAndObjects.Wpf
+namespace Pra.ClassesAndObjects.Wpf
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-
         public MainWindow()
         {
             InitializeComponent();
@@ -35,23 +34,26 @@ namespace Prb.ClassesAndObjects.Wpf
                 cmbCarType.Focus();
                 return;
             }
+
             string color = txtColor.Text.Trim();
             string carbrand = txtCarBrand.Text.Trim();
             decimal.TryParse(txtPrice.Text.Trim(), out decimal price);
             int.TryParse(txtTopSpeed.Text.Trim(), out int topSpeed);
             CarType carType = (CarType)cmbCarType.SelectedItem;
+
             Car car = new Car();
             car.Color = color;
             car.Brand = carbrand;
             car.Price = price;
             car.TopSpeed = topSpeed;
             car.CarType = carType;
-            //cars.Add(car);
+
+            // TODO: add car to garage
             UpdateCarListbox();
         }
         private void UpdateCarListbox()
         {
-
+            // TODO show all cars from garage
         }
 
         private void LstCars_SelectionChanged(object sender, SelectionChangedEventArgs e)
