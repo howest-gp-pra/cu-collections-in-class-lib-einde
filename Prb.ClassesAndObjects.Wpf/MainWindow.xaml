@@ -1,0 +1,25 @@
+﻿<Window x:Class="Prb.ClassesAndObjects.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prb.ClassesAndObjects.Wpf"
+        mc:Ignorable="d"
+        Title="Klassen en objecten: Autovoorbeeld" Height="365" Width="497">
+    <Grid>
+        <Label Content="Auto's" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstCars" HorizontalAlignment="Left" Height="273" Margin="10,41,0,0" VerticalAlignment="Top" Width="199" SelectionChanged="LstCars_SelectionChanged" />
+        <Label Content="Automerk:" HorizontalAlignment="Left" Margin="216,46,0,0" VerticalAlignment="Top"/>
+        <Label Content="Kleur:" HorizontalAlignment="Left" Margin="216,75,0,0" VerticalAlignment="Top"/>
+        <Label Content="Prijs:" HorizontalAlignment="Left" Margin="216,103,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAddNewCar" Content="Voeg nieuwe auto toe" HorizontalAlignment="Left" Margin="224,238,0,0" VerticalAlignment="Top" Width="253" Click="BtnAddNewCar_Click" />
+        <TextBox x:Name="txtCarBrand" HorizontalAlignment="Left" Height="23" Margin="309,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="txtColor" HorizontalAlignment="Left" Height="23" Margin="309,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="txtPrice" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Height="23" Margin="309,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+        <Label Content="Type:" HorizontalAlignment="Left" Margin="220,174,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbCarType" HorizontalAlignment="Left" Height="25" Margin="311,173,0,0" VerticalAlignment="Top" Width="157"/>
+        <Label Content="Topsnelheid:" HorizontalAlignment="Left" Margin="219,134,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTopSpeed" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Height="23" Margin="310,136,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+
+    </Grid>
+</Window>
