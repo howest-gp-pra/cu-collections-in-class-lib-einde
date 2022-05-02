@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Klassen en objecten: Autovoorbeeld" Height="365" Width="497">
+        Title="Klassen en objecten: Autovoorbeeld" Height="365" Width="497" Loaded="Window_Loaded">
     <Grid>
         <Label Content="Auto's" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <ListBox x:Name="lstCars" HorizontalAlignment="Left" Height="273" Margin="10,41,0,0" VerticalAlignment="Top" Width="199" SelectionChanged="LstCars_SelectionChanged" />

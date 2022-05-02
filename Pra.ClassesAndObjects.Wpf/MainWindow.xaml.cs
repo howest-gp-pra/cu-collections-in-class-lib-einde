@@ -21,9 +21,12 @@ namespace Pra.ClassesAndObjects.Wpf
     /// </summary>
     public partial class MainWindow : Window
     {
+        Garage garage;
+
         public MainWindow()
         {
             InitializeComponent();
+            garage = new Garage(true);
         }
 
         private void BtnAddNewCar_Click(object sender, RoutedEventArgs e)
@@ -48,12 +51,13 @@ namespace Pra.ClassesAndObjects.Wpf
             car.TopSpeed = topSpeed;
             car.CarType = carType;
 
-            // TODO: add car to garage
+            garage.AddCar(car);
             UpdateCarListbox();
         }
         private void UpdateCarListbox()
         {
-            // TODO show all cars from garage
+            lstCars.ItemsSource = garage.Cars;
+            lstCars.Items.Refresh();
         }
 
         private void LstCars_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -67,6 +71,12 @@ namespace Pra.ClassesAndObjects.Wpf
                 txtTopSpeed.Text = car.TopSpeed.ToString();
                 cmbCarType.SelectedItem = car.CarType;
             }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            cmbCarType.ItemsSource = garage.CarTypes;
+            UpdateCarListbox();
         }
     }
 }
